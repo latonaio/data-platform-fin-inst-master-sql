@@ -14,6 +14,7 @@ CREATE TABLE `data_platform_fin_inst_master_general_data`
     
     PRIMARY KEY (`FinInstCountry`, `FinInstNumber`),
 
+  CONSTRAINT `DataPlatformFinInstMasterGeneralDataFinInstCountry_fk` FOREIGN KEY (`FinInstCountry`) REFERENCES `data_platform_country_country_data` (`Country`)
   CONSTRAINT `DataPlatformFinInstMasterGeneralDataAddressID_fk` FOREIGN KEY (`AddressID`) REFERENCES `data_platform_address_address_data` (`AddressID`)
 
 ) ENGINE = InnoDB
