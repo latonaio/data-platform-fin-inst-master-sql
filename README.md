@@ -9,9 +9,11 @@ https://api.XXXXXXXX.com/api/OP_API_XXXXXXX_XXX/overview
 data-platform-fin-inst-master-sqlには、sqlの設定ファイルとして、以下のファイルが含まれます。   
 設定ファイルに含まれる、金融機関コードと金融機関名のデータは、[こちら](https://senrinomitiwohitoaside.com/bankdata/)を参照しています。
 
-* data-platform-fin-inst-master-sql-general-data.sql （データ連携基盤 金融機関マスタ - 金融機関データ）
-* data-platform-fin-inst-master-sql-general-data-setup.sql （データ連携基盤 金融機関マスタ - 金融機関データ 設定）
-* data-platform-fin-inst-master-sql-business-partner-data.sql （データ連携基盤 金融機関マスタ - ビジネスパートナデータ）
+* data-platform-fin-inst-master-sql-general-data.sql （データ連携基盤 金融機関マスタ - 一般データ）
+* data-platform-fin-inst-master-sql-general-data-setup.sql （データ連携基盤 金融機関マスタ - 一般データ 設定）
+* data-platform-fin-inst-master-sql-branch-data.sql （データ連携基盤 金融機関マスタ - 支店データ）
+* data-platform-fin-inst-master-sql-general-business-partner-data.sql （データ連携基盤 金融機関マスタ - 一般ビジネスパートナデータ）
+* data-platform-fin-inst-master-sql-branch-business-partner-data.sql（データ連携基盤 金融機関マスタ - 支店ビジネスパートナデータ）
 
 ## 設定値
 setupファイルには、各テーブルに対応して設定値が含まれています。  
