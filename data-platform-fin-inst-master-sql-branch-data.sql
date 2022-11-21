@@ -10,9 +10,9 @@ CREATE TABLE `data_platform_fin_inst_master_branch_data`
     `SWIFTCode`                         varchar(11) DEFAULT NULL,
     `IsMarkedForDeletion`               tinyint(1) DEFAULT NULL,
     
-    PRIMARY KEY (`FinInstCountry`, `FinInstCode`, `FinInstBranchCode`, `FinInstFullCode`),
+    PRIMARY KEY (`FinInstCountry`, `FinInstCode`),
 
-  CONSTRAINT `DataPlatformFinInstMasterBranchData_fk` FOREIGN KEY (`FinInstCountry`, `FinInstCode`, `FinInstBranchCode`, `FinInstFullCode`) REFERENCES `data_platform_fin_inst_master_general_data` (`FinInstCountry`, `FinInstCode`, `FinInstBranchCode`, `FinInstFullCode`),
+  CONSTRAINT `DataPlatformFinInstMasterBranchData_fk` FOREIGN KEY (`FinInstCountry`, `FinInstCode`) REFERENCES `data_platform_fin_inst_master_general_data` (`FinInstCountry`, `FinInstCode`),
   CONSTRAINT `DataPlatformFinInstMasterBranchDataAddressID_fk` FOREIGN KEY (`AddressID`) REFERENCES `data_platform_address_address_data` (`AddressID`)
 
 ) ENGINE = InnoDB
